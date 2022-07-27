@@ -1,0 +1,516 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  text-decoration: none;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  line-height: 1;
+  margin: 0;
+  padding: 0;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+header #social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 10px 23px 10px 10px;
+}
+
+header #social-media .website {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  color: #4460a0;
+}
+
+header #social-media .website span {
+  padding-left: 5px;
+}
+
+header #social-media .website:last-child {
+  color: #00aaec;
+}
+
+header #social-media .line {
+  border: 1px solid #cccccc;
+  margin: 0 10px;
+}
+
+header nav {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+header nav h1 a {
+  width: 224px;
+  height: 50px;
+  background-image: url(../img/logo.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  display: block;
+  text-indent: 101%;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-left: 10px;
+}
+
+header nav .mainbav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  width: 300px;
+  position: relative;
+}
+
+header nav .mainbav li a {
+  color: #11cfa0;
+}
+
+header nav .mainbav li a:hover {
+  color: #cccccc;
+}
+
+header nav .mainbav li ul {
+  display: none;
+  width: 100px;
+  height: 200px;
+  background-color: #ffffff;
+  position: absolute;
+  left: -17px;
+  top: 33px;
+  z-index: 2;
+  text-align: center;
+  border-radius: 0 0 5% 5%;
+}
+
+header nav .mainbav li ul a {
+  display: block;
+  line-height: 50px;
+}
+
+header nav .mainbav li:first-child::after {
+  width: 20%;
+  height: 3px;
+  content: '';
+  display: block;
+  background-color: #11cfa0;
+  position: absolute;
+  left: 10px;
+  bottom: -17px;
+}
+
+header nav .mainbav li:first-child:hover::after {
+  background-color: #cccccc;
+}
+
+header nav .mainbav li:nth-child(2) {
+  position: relative;
+}
+
+main #banner {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: 100%;
+}
+
+main #banner .swiper {
+  width: 100%;
+  height: 450px;
+}
+
+main #banner .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+main #banner .swiper-slide img {
+  width: 100%;
+  height: 450px;
+  display: block;
+}
+
+main #banner .swiper-slide div {
+  width: 100%;
+  height: 160px;
+  background-color: #02020252;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+main #banner .swiper-slide div p {
+  font-size: 36px;
+  line-height: 48px;
+  color: #ffffff;
+  text-align: left;
+  padding: 30px;
+}
+
+main #item {
+  margin: 60px auto;
+}
+
+main #item ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+main #item ul li {
+  width: 300px;
+  height: 330px;
+  -webkit-filter: drop-shadow(0px 3px 1.5px rgba(0, 0, 0, 0.16));
+          filter: drop-shadow(0px 3px 1.5px rgba(0, 0, 0, 0.16));
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 3px;
+  text-align: center;
+}
+
+main #item ul li img {
+  max-width: 260px;
+  min-height: 139px;
+  -o-object-fit: none;
+     object-fit: none;
+}
+
+main #item ul li h2 {
+  font-size: 18px;
+  line-height: 24px;
+  color: #333333;
+  text-align: unset;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+main #item ul li p {
+  font-size: 15px;
+  line-height: 22px;
+  color: #333333;
+  text-align: left;
+}
+
+main #course {
+  max-width: 900px;
+  margin: 62px auto;
+}
+
+main #course h3 {
+  font-size: 24px;
+  line-height: 22px;
+  color: #333333;
+  text-align: center;
+  margin: 30px 0;
+}
+
+main #course table {
+  width: 100%;
+}
+
+main #course table th, main #course table tr {
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+
+main #course table th {
+  font-size: 15px;
+  line-height: 36px;
+  color: unset;
+  text-align: left;
+  background-color: #f7f7f7;
+  padding: 3px;
+}
+
+main #course table td {
+  font-size: 15px;
+  line-height: 36px;
+  color: #4e4e4e;
+  text-align: left;
+  padding: 3px;
+}
+
+main #course table td:first-child, main #course table th:first-child {
+  text-indent: 20px;
+}
+
+main #course table .change-color {
+  color: #22b28e;
+}
+
+main #form {
+  height: 450px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#009872), to(#00644b));
+  background-image: linear-gradient(0deg, #009872 0%, #00644b 100%);
+}
+
+main #form p {
+  font-size: 24px;
+  line-height: 36px;
+  color: #ffffff;
+  text-align: center;
+  padding: 35px 0;
+}
+
+main #form div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+main #form div textarea {
+  width: 460px;
+  height: 245px;
+  border-radius: 3px;
+  border: 1px solid #e1e1e1;
+  resize: none;
+}
+
+main #form div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+main #form div div label {
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: unset;
+}
+
+main #form div div input {
+  width: 460px;
+  height: 32px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: 1px solid #e1e1e1;
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+main #form div div div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+}
+
+main #form div div div button {
+  width: 70px;
+  height: 32px;
+  font-size: 15px;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  border-radius: 3px;
+  background-color: #00cc99;
+  border: unset;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+      -ms-flex-direction: unset;
+          flex-direction: unset;
+  margin: 30px 20px;
+}
+
+footer .logo {
+  width: 171px;
+  height: 36px;
+  background-image: url(../img/footerLogo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+footer .mail {
+  margin-bottom: 15px;
+}
+
+footer span {
+  color: #e12d80;
+}
+
+footer .top {
+  position: relative;
+}
+
+footer .top a {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
+#lightboxOverlay {
+  background-color: #009872;
+  opacity: 0.6;
+}
+/*# sourceMappingURL=index.css.map */
